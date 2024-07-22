@@ -1,0 +1,427 @@
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* Header styles */
+header {
+  background: linear-gradient(to right, #3498db, #2c3e50);
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+/* LoginPage styles*/
+.login-page {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-page h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.login-page .form-group {
+  margin-bottom: 20px;
+}
+
+.login-page .form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #34495e;
+}
+
+.login-page .form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #bdc3c7;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.login-page .form-group input:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+.login-page button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-page button[type="submit"]:hover {
+  background-color: #2980b9;
+}
+
+.login-page button[type="submit"]:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}
+
+.login-page .error-message {
+  color: #e74c3c;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.login-page p {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.login-page a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.login-page a:hover {
+  text-decoration: underline;
+}
+/* Navigation styles */
+nav {
+  display: flex;
+  justify-content: space-around;
+  background: #2c3e50;
+  padding: 0.5rem 0;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  transition: background 0.3s ease;
+}
+
+nav a:hover {
+  background: #34495e;
+}
+
+/* Main content styles */
+main {
+  padding: 2rem 0;
+}
+
+main h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+main p {
+  margin-bottom: 1rem;
+}
+
+/* Button styles */
+button {
+  background: #333;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.1s ease;
+}
+
+button:hover {
+  background: #555;
+  transform: translateY(-2px);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+button:disabled {
+  background-color: #cccccc;
+}
+
+/* Form styles */
+form {
+  margin-top: 1rem;
+}
+
+form input,
+form select,
+form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+}
+
+form input:hover,
+form select:hover,
+form textarea:hover {
+  border-color: #3498db;
+}
+
+form input[type="submit"] {
+  background: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+  background: #555;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: 2px solid #3498db;
+}
+
+/* Card styles */
+.card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeIn 0.5s ease-in;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  max-width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.card h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.card p {
+  margin-bottom: 0.5rem;
+}
+
+.card .price {
+  font-weight: bold;
+  color: #e74c3c;
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+}
+
+.card .btn {
+  margin-top: auto;
+  background-color: #3498db;
+  color: white;
+  text-align: center;
+  padding: 0.5rem;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.card .btn:hover {
+  background-color: #2980b9;
+}
+
+/* Search form */
+.search-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 2rem;
+}
+
+.search-form input,
+.search-form select {
+  flex: 1;
+}
+
+.search-form button {
+  flex: 0 0 auto;
+  background-color: #3498db;
+}
+
+.search-form button:hover {
+  background-color: #2980b9;
+}
+
+/* Footer enhancements */
+footer {
+  background: #2c3e50;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+/* Responsive layout */
+@media (min-width: 768px) {
+  .container {
+    width: 80%;
+  }
+
+  nav {
+    justify-content: space-between;
+  }
+
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .card {
+    width: 48%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    width: 70%;
+  }
+
+  .card {
+    width: 32%;
+  }
+}
+
+/* Add some animation */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Register page styles */
+.register-page {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.error {
+  color: red;
+  font-size: 0.8em;
+  margin-top: 5px;
+}
+
+.error-message {
+  color: #e74c3c;
+  background-color: #fadbd8;
+  border: 1px solid #e74c3c;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+/* Password strength meter styles */
+.password-strength-meter {
+  height: 5px;
+  background-color: #eee;
+  margin-top: 5px;
+  border-radius: 3px;
+}
+
+.password-strength-meter div {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 0.5s ease-in-out;
+}
+
+.strength-1 { background-color: #ff4d4d; width: 20%; }
+.strength-2 { background-color: #ffa64d; width: 40%; }
+.strength-3 { background-color: #ffff4d; width: 60%; }
+.strength-4 { background-color: #4dff4d; width: 80%; }
+.strength-5 { background-color: #33cc33; width: 100%; }
+
+/* Trader dashboard styles */
+.trader-dashboard {
+  padding: 20px;
+}
+
+.product-form {
+  margin-bottom: 30px;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.product-item {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 15px;
+  background-color: #fff;
+}
+
+.product-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.product-actions button {
+  flex: 1;
+  margin: 0 5px;
+}
